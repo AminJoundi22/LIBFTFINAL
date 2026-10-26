@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ajoundi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:07:17 by ajoundi           #+#    #+#             */
-/*   Updated: 2026/10/13 14:07:23 by ajoundi          ###   ########.fr       */
+/*   Updated: 2026/10/25 16:51:00 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 void	ft_putstr_fd(char const *s, int fd)
 {
 	size_t	i;
+	if (!s)
+		return ;
 
 	i = 0;
 	while (s[i])

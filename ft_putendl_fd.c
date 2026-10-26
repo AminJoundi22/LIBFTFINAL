@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ajoundi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:11:30 by ajoundi           #+#    #+#             */
-/*   Updated: 2026/10/13 14:11:45 by ajoundi          ###   ########.fr       */
+/*   Updated: 2026/10/25 16:51:16 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 void	ft_putendl_fd(char const *s, int fd)
 {
 	size_t	i;
+	if (!s)
+		return ;
 
 	i = 0;
 	while (s[i])
